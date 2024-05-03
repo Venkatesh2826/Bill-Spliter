@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Bill</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SPLIT BILL</h1>
+        <input type="text" id="billAmount" placeholder="billAmount">
+        <br><br>
+        <input type="text" id="noOfPersons" placeholder="noOfPersons">
+        <br><br>
+        <p id="cgst">CGST:</p>
+        <p id="sgst">SGST:</p>
+        <br>
+        <input type="checkbox" id="online" onclick="discount()"> <span>Online</span>
+        <br><br>
+        <input type="text" id="output" placeholder="output">
+        <br><br>
+        <button id="btn" onclick="SplitBill()">
+            SPLIT BILL
+        </button>
+    </div>
+<script src="./app.js"></script>
+</body>
+</html>

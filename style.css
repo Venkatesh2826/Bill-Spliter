@@ -1,0 +1,42 @@
+.container{
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 100px auto;
+    background-color: blanchedalmond;
+}
+
+.container h1{
+    text-align: center;
+}
+.container input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid whitesmoke;
+    margin-left: 20px;
+}
+.container p{
+    margin-left: 30px;
+}
+.container #online{
+    margin-left: -230px;
+}
+.container span{
+    margin-left: -260px;
+}
+
+
+
+.container button{
+    width: 150px;
+    padding: 12px;
+    margin-bottom: 20px;
+    color: black;
+    background-color: aqua;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: medium;
+    margin-left: 220px;
+}
