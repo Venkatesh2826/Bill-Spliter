@@ -46,6 +46,9 @@ function discount() {
     cgstbill.innerHTML = `CGST: ZERO TAX`;
     sgstbill.innerHTML = `SGST: ZERO TAX`;
     splitbill.value =Math.round(totalAmount/noOfpersons); 
+    document.getElementById("billAmount").value ="";
+    document.getElementById("noOfPersons").value= "";
+
 }
 else if (billAmount > 100) {
   const online = billAmount * 0.05;
@@ -53,10 +56,15 @@ else if (billAmount > 100) {
   cgstbill.innerHTML = `CGST: ${totalAmount* 0.09}`;
   sgstbill.innerHTML = `SGST: ${totalAmount * 0.09}`;
   splitbill.value =Math.round(totalAmount/noOfpersons);
+  document.getElementById("billAmount").value ="";
+  document.getElementById("noOfPersons").value= "";
 }
 else{
   const online = billAmount * 0.05;
   const totalAmount = billAmount - online;
   splitbill.value = Math.round(totalAmount/noOfpersons);
+  document.getElementById("billAmount").value ="";
+  document.getElementById("noOfPersons").value= "";
+
 }
 }
