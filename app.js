@@ -15,14 +15,14 @@ function SplitBill() {
   else if (billAmount <= 0) {
     alert("Bill Amount cannot be negative");
   } 
-  else if (billAmount > 0 && billAmount < 100) {
+  else if (billAmount > 0 && billAmount < 500) {
     cgstbill.innerHTML = `CGST: ZERO TAX`;
     sgstbill.innerHTML = `SGST: ZERO TAX`;
     splitbill.value =Math.round(output);
     
 
   }
-   else if (billAmount > 100) {
+   else if (billAmount > 500) {
     cgstbill.innerHTML = `CGST: ${billAmount * 0.09}`;
     sgstbill.innerHTML = `SGST: ${billAmount * 0.09}`;
     splitbill.value =Math.round(output);
@@ -40,7 +40,7 @@ function discount() {
   const noOfpersons = document.getElementById("noOfPersons").value;
   const cgstbill = document.getElementById("cgst");
   const sgstbill = document.getElementById("sgst");
-  if (billAmount > 0 && billAmount < 100) {
+  if (billAmount > 0 && billAmount < 500) {
     const online = billAmount * 0.05;
     const totalAmount = billAmount - online;
     cgstbill.innerHTML = `CGST: ZERO TAX`;
@@ -50,7 +50,7 @@ function discount() {
     document.getElementById("noOfPersons").value= "";
 
 }
-else if (billAmount > 100) {
+else if (billAmount > 500) {
   const online = billAmount * 0.05;
   const totalAmount = billAmount - online;
   cgstbill.innerHTML = `CGST: ${totalAmount* 0.09}`;

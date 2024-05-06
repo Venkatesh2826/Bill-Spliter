@@ -3,7 +3,7 @@
     border: 1px solid black;
     border-radius: 8px;
     margin: 100px auto;
-    background-color: blanchedalmond;
+    background-color: gold;
 }
 
 .container h1{
@@ -26,14 +26,12 @@
     margin-left: -260px;
 }
 
-
-
 .container button{
     width: 150px;
     padding: 12px;
     margin-bottom: 20px;
-    color: black;
-    background-color: aqua;
+    color:white;
+    background-color: #033631;
     border: none;
     border-radius: 8px;
     cursor: pointer;
